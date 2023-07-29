@@ -1,0 +1,1322 @@
+samples/pn_dev/app_data.c:170:9: style: The scope of the variable 'led_state' can be reduced. [variableScope]
+   bool led_state;
+        ^
+samples/pn_dev/app_data.c:95:9: style:inconclusive: Function 'app_data_get_input_data' argument 4 names different: declaration 'button_state' definition 'button_pressed'. [funcArgNamesDifferent]
+   bool button_pressed,
+        ^
+samples/pn_dev/app_data.h:64:9: note: Function 'app_data_get_input_data' argument 4 names different: declaration 'button_state' definition 'button_pressed'.
+   bool button_state,
+        ^
+samples/pn_dev/app_data.c:95:9: note: Function 'app_data_get_input_data' argument 4 names different: declaration 'button_state' definition 'button_pressed'.
+   bool button_pressed,
+        ^
+samples/pn_dev/app_data.c:218:13: style:inconclusive: Function 'app_data_write_parameter' argument 6 names different: declaration 'write_length' definition 'length'. [funcArgNamesDifferent]
+   uint16_t length)
+            ^
+samples/pn_dev/app_data.h:114:13: note: Function 'app_data_write_parameter' argument 6 names different: declaration 'write_length' definition 'length'.
+   uint16_t write_length);
+            ^
+samples/pn_dev/app_data.c:218:13: note: Function 'app_data_write_parameter' argument 6 names different: declaration 'write_length' definition 'length'.
+   uint16_t length)
+            ^
+samples/pn_dev/app_gsdml.c:201:63: style:inconclusive: Function 'app_gsdml_get_module_cfg' argument 1 names different: declaration 'module_id' definition 'id'. [funcArgNamesDifferent]
+const app_gsdml_module_t * app_gsdml_get_module_cfg (uint32_t id)
+                                                              ^
+samples/pn_dev/app_gsdml.h:160:63: note: Function 'app_gsdml_get_module_cfg' argument 1 names different: declaration 'module_id' definition 'id'.
+const app_gsdml_module_t * app_gsdml_get_module_cfg (uint32_t module_id);
+                                                              ^
+samples/pn_dev/app_gsdml.c:201:63: note: Function 'app_gsdml_get_module_cfg' argument 1 names different: declaration 'module_id' definition 'id'.
+const app_gsdml_module_t * app_gsdml_get_module_cfg (uint32_t id)
+                                                              ^
+samples/pn_dev/app_gsdml.c:214:69: style:inconclusive: Function 'app_gsdml_get_submodule_cfg' argument 1 names different: declaration 'submodule_id' definition 'id'. [funcArgNamesDifferent]
+const app_gsdml_submodule_t * app_gsdml_get_submodule_cfg (uint32_t id)
+                                                                    ^
+samples/pn_dev/app_gsdml.h:168:13: note: Function 'app_gsdml_get_submodule_cfg' argument 1 names different: declaration 'submodule_id' definition 'id'.
+   uint32_t submodule_id);
+            ^
+samples/pn_dev/app_gsdml.c:214:69: note: Function 'app_gsdml_get_submodule_cfg' argument 1 names different: declaration 'submodule_id' definition 'id'.
+const app_gsdml_submodule_t * app_gsdml_get_submodule_cfg (uint32_t id)
+                                                                    ^
+samples/pn_dev/app_log.c:30:12: style: The scope of the variable 'list' can be reduced. [variableScope]
+   va_list list;
+           ^
+samples/pn_dev/app_log.c:41:74: style:inconclusive: Function 'app_log_print_bytes' argument 3 names different: declaration 'length' definition 'len'. [funcArgNamesDifferent]
+void app_log_print_bytes (int32_t level, const uint8_t * bytes, uint32_t len)
+                                                                         ^
+samples/pn_dev/app_log.h:63:74: note: Function 'app_log_print_bytes' argument 3 names different: declaration 'length' definition 'len'.
+void app_log_print_bytes (int32_t level, const uint8_t * bytes, uint32_t length);
+                                                                         ^
+samples/pn_dev/app_log.c:41:74: note: Function 'app_log_print_bytes' argument 3 names different: declaration 'length' definition 'len'.
+void app_log_print_bytes (int32_t level, const uint8_t * bytes, uint32_t len)
+                                                                         ^
+samples/pn_dev/app_utils.c:669:25: style: Expression is always true because 'else if' condition is opposite to previous condition at line 660. [multiCondition]
+      else if (ioxs_new != PNET_IOXS_GOOD)
+                        ^
+samples/pn_dev/app_utils.c:660:25: note: first condition
+      else if (ioxs_new == PNET_IOXS_GOOD)
+                        ^
+samples/pn_dev/app_utils.c:669:25: note: else if condition is opposite to first condition
+      else if (ioxs_new != PNET_IOXS_GOOD)
+                        ^
+samples/pn_dev/app_utils.c:497:7: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+      printf (
+      ^
+samples/pn_dev/app_utils.c:340:51: style:inconclusive: Function 'app_utils_pnet_cfg_init_default' argument 1 names different: declaration 'pnet_cfg' definition 'cfg'. [funcArgNamesDifferent]
+int app_utils_pnet_cfg_init_default (pnet_cfg_t * cfg)
+                                                  ^
+samples/pn_dev/app_utils.h:384:51: note: Function 'app_utils_pnet_cfg_init_default' argument 1 names different: declaration 'pnet_cfg' definition 'cfg'.
+int app_utils_pnet_cfg_init_default (pnet_cfg_t * pnet_cfg);
+                                                  ^
+samples/pn_dev/app_utils.c:340:51: note: Function 'app_utils_pnet_cfg_init_default' argument 1 names different: declaration 'pnet_cfg' definition 'cfg'.
+int app_utils_pnet_cfg_init_default (pnet_cfg_t * cfg)
+                                                  ^
+samples/pn_dev/app_utils.c:717:13: style:inconclusive: Function 'app_utils_plug_submodule' argument 4 names different: declaration 'submodule_id' definition 'submodule_ident'. [funcArgNamesDifferent]
+   uint32_t submodule_ident,
+            ^
+samples/pn_dev/app_utils.h:441:13: note: Function 'app_utils_plug_submodule' argument 4 names different: declaration 'submodule_id' definition 'submodule_ident'.
+   uint32_t submodule_id,
+            ^
+samples/pn_dev/app_utils.c:717:13: note: Function 'app_utils_plug_submodule' argument 4 names different: declaration 'submodule_id' definition 'submodule_ident'.
+   uint32_t submodule_ident,
+            ^
+samples/pn_dev/sampleapp_common.c:995:14: style: The scope of the variable 'indata' can be reduced. [variableScope]
+   uint8_t * indata;
+             ^
+samples/pn_dev/sampleapp_common.c:1000:12: style: The scope of the variable 'outdata_buf' can be reduced. [variableScope]
+   uint8_t outdata_buf[20]; /* Todo: Remove temporary buffer */
+           ^
+samples/pn_dev_lan9662/app_data.c:318:16: style: The scope of the variable 'j' can be reduced. [variableScope]
+   uint16_t i, j;
+               ^
+samples/pn_dev_lan9662/app_data.c:319:31: style: The scope of the variable 'module_cfg' can be reduced. [variableScope]
+   const app_gsdml_module_t * module_cfg;
+                              ^
+samples/pn_dev_lan9662/app_data.c:347:8: style: The scope of the variable 'error' can be reduced. [variableScope]
+   int error = -1;
+       ^
+samples/pn_dev_lan9662/app_data.c:347:14: style: Variable 'error' is assigned a value that is never used. [unreadVariable]
+   int error = -1;
+             ^
+samples/pn_dev_lan9662/app_gsdml.c:358:63: style:inconclusive: Function 'app_gsdml_get_module_cfg' argument 1 names different: declaration 'module_id' definition 'id'. [funcArgNamesDifferent]
+const app_gsdml_module_t * app_gsdml_get_module_cfg (uint32_t id)
+                                                              ^
+samples/pn_dev_lan9662/app_gsdml.h:197:63: note: Function 'app_gsdml_get_module_cfg' argument 1 names different: declaration 'module_id' definition 'id'.
+const app_gsdml_module_t * app_gsdml_get_module_cfg (uint32_t module_id);
+                                                              ^
+samples/pn_dev_lan9662/app_gsdml.c:358:63: note: Function 'app_gsdml_get_module_cfg' argument 1 names different: declaration 'module_id' definition 'id'.
+const app_gsdml_module_t * app_gsdml_get_module_cfg (uint32_t id)
+                                                              ^
+samples/pn_dev_lan9662/app_gsdml.c:383:69: style:inconclusive: Function 'app_gsdml_get_submodule_cfg' argument 1 names different: declaration 'submodule_id' definition 'id'. [funcArgNamesDifferent]
+const app_gsdml_submodule_t * app_gsdml_get_submodule_cfg (uint32_t id)
+                                                                    ^
+samples/pn_dev_lan9662/app_gsdml.h:205:13: note: Function 'app_gsdml_get_submodule_cfg' argument 1 names different: declaration 'submodule_id' definition 'id'.
+   uint32_t submodule_id);
+            ^
+samples/pn_dev_lan9662/app_gsdml.c:383:69: note: Function 'app_gsdml_get_submodule_cfg' argument 1 names different: declaration 'submodule_id' definition 'id'.
+const app_gsdml_submodule_t * app_gsdml_get_submodule_cfg (uint32_t id)
+                                                                    ^
+samples/pn_dev_lan9662/app_log.c:30:12: style: The scope of the variable 'list' can be reduced. [variableScope]
+   va_list list;
+           ^
+samples/pn_dev_lan9662/app_log.c:41:74: style:inconclusive: Function 'app_log_print_bytes' argument 3 names different: declaration 'length' definition 'len'. [funcArgNamesDifferent]
+void app_log_print_bytes (int32_t level, const uint8_t * bytes, uint32_t len)
+                                                                         ^
+samples/pn_dev_lan9662/app_log.h:63:74: note: Function 'app_log_print_bytes' argument 3 names different: declaration 'length' definition 'len'.
+void app_log_print_bytes (int32_t level, const uint8_t * bytes, uint32_t length);
+                                                                         ^
+samples/pn_dev_lan9662/app_log.c:41:74: note: Function 'app_log_print_bytes' argument 3 names different: declaration 'length' definition 'len'.
+void app_log_print_bytes (int32_t level, const uint8_t * bytes, uint32_t len)
+                                                                         ^
+samples/pn_dev_lan9662/app_shm.c:101:7: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+      snprintf (
+      ^
+samples/pn_dev_lan9662/app_shm.c:101:7: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+      snprintf (
+      ^
+samples/pn_dev_lan9662/app_utils.c:394:7: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+      printf (
+      ^
+samples/pn_dev_lan9662/app_utils.c:229:51: style:inconclusive: Function 'app_utils_pnet_cfg_init_default' argument 1 names different: declaration 'pnet_cfg' definition 'cfg'. [funcArgNamesDifferent]
+int app_utils_pnet_cfg_init_default (pnet_cfg_t * cfg)
+                                                  ^
+samples/pn_dev_lan9662/app_utils.h:303:51: note: Function 'app_utils_pnet_cfg_init_default' argument 1 names different: declaration 'pnet_cfg' definition 'cfg'.
+int app_utils_pnet_cfg_init_default (pnet_cfg_t * pnet_cfg);
+                                                  ^
+samples/pn_dev_lan9662/app_utils.c:229:51: note: Function 'app_utils_pnet_cfg_init_default' argument 1 names different: declaration 'pnet_cfg' definition 'cfg'.
+int app_utils_pnet_cfg_init_default (pnet_cfg_t * cfg)
+                                                  ^
+samples/pn_dev_lan9662/app_utils.c:543:12: style:inconclusive: Function 'app_utils_print_ioxs_change' argument 3 names different: declaration 'ioxs_current' definition 'iocs_current'. [funcArgNamesDifferent]
+   uint8_t iocs_current,
+           ^
+samples/pn_dev_lan9662/app_utils.h:285:12: note: Function 'app_utils_print_ioxs_change' argument 3 names different: declaration 'ioxs_current' definition 'iocs_current'.
+   uint8_t ioxs_current,
+           ^
+samples/pn_dev_lan9662/app_utils.c:543:12: note: Function 'app_utils_print_ioxs_change' argument 3 names different: declaration 'ioxs_current' definition 'iocs_current'.
+   uint8_t iocs_current,
+           ^
+samples/pn_dev_lan9662/app_utils.c:544:12: style:inconclusive: Function 'app_utils_print_ioxs_change' argument 4 names different: declaration 'ioxs_new' definition 'iocs_new'. [funcArgNamesDifferent]
+   uint8_t iocs_new)
+           ^
+samples/pn_dev_lan9662/app_utils.h:286:12: note: Function 'app_utils_print_ioxs_change' argument 4 names different: declaration 'ioxs_new' definition 'iocs_new'.
+   uint8_t ioxs_new);
+           ^
+samples/pn_dev_lan9662/app_utils.c:544:12: note: Function 'app_utils_print_ioxs_change' argument 4 names different: declaration 'ioxs_new' definition 'iocs_new'.
+   uint8_t iocs_new)
+           ^
+samples/pn_dev_lan9662/app_utils.c:601:13: style:inconclusive: Function 'app_utils_plug_submodule' argument 4 names different: declaration 'submodule_id' definition 'submodule_ident'. [funcArgNamesDifferent]
+   uint32_t submodule_ident,
+            ^
+samples/pn_dev_lan9662/app_utils.h:360:13: note: Function 'app_utils_plug_submodule' argument 4 names different: declaration 'submodule_id' definition 'submodule_ident'.
+   uint32_t submodule_id,
+            ^
+samples/pn_dev_lan9662/app_utils.c:601:13: note: Function 'app_utils_plug_submodule' argument 4 names different: declaration 'submodule_id' definition 'submodule_ident'.
+   uint32_t submodule_ident,
+            ^
+samples/pn_dev_lan9662/sampleapp_common.c:498:20: style: The scope of the variable 'p_subslot' can be reduced. [variableScope]
+   app_subslot_t * p_subslot;
+                   ^
+samples/pn_dev_lan9662/sampleapp_common.c:929:14: style: The scope of the variable 'indata' can be reduced. [variableScope]
+   uint8_t * indata;
+             ^
+samples/pn_dev_lan9662/sampleapp_common.c:934:14: style: The scope of the variable 'outdata' can be reduced. [variableScope]
+   uint8_t * outdata;
+             ^
+samples/pn_shm_tool/pn_shm_tool.c:293:7: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+      LOG_ERR (
+      ^
+samples/pn_shm_tool/pn_shm_tool.c:492:27: style: Checking if unsigned expression 'app.create_size' is less than zero. [unsignedLessThanZero]
+      if (app.create_size <= 0 || app.create_size > MAX_STDIO_BUFFER)
+                          ^
+src/common/pf_alarm.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+src/common/pf_cpm.c:152:13: style: The scope of the variable 'cnt' can be reduced. [variableScope]
+   uint32_t cnt;
+            ^
+src/common/pf_cpm.c:334:13: style: The scope of the variable 'crep' can be reduced. [variableScope]
+   uint32_t crep;
+            ^
+src/common/pf_cpm.c:335:13: style: The scope of the variable 'iodata_ix' can be reduced. [variableScope]
+   uint16_t iodata_ix;
+            ^
+src/common/pf_cpm_driver_sw.c:272:12: style: The scope of the variable 'changes' can be reduced. [variableScope]
+   uint8_t changes;
+           ^
+src/common/pf_dcp.c:375:12: style: The scope of the variable 'negative_response_data' can be reduced. [variableScope]
+   uint8_t negative_response_data[3]; /* For negative get */
+           ^
+src/common/pf_dcp.c:704:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/common/pf_lldp.c:588:9: style: The scope of the variable 'station_name' can be reduced. [variableScope]
+   char station_name[PNET_STATION_NAME_MAX_SIZE]; /** Terminated */
+        ^
+src/common/pf_lldp.c:652:9: style: The scope of the variable 'station_name' can be reduced. [variableScope]
+   char station_name[PNET_STATION_NAME_MAX_SIZE]; /** Terminated */
+        ^
+src/common/pf_lldp.c:775:11: style: The scope of the variable 'p' can be reduced. [variableScope]
+   char * p;
+          ^
+src/common/pf_lldp.c:1770:8: style: The scope of the variable 'res' can be reduced. [variableScope]
+   int res = 0;
+       ^
+src/common/pf_lldp.c:1770:12: style: Variable 'res' is assigned a value that is never used. [unreadVariable]
+   int res = 0;
+           ^
+src/common/pf_ppm.c:438:13: style: The scope of the variable 'crep' can be reduced. [variableScope]
+   uint32_t crep;
+            ^
+src/common/pf_ppm.c:439:13: style: The scope of the variable 'iodata_ix' can be reduced. [variableScope]
+   uint16_t iodata_ix;
+            ^
+src/common/pf_ppm_driver_sw.c:40:13: style: The scope of the variable 'delay' can be reduced. [variableScope]
+   uint32_t delay = 0;
+            ^
+src/common/pf_ppm_driver_sw.c:40:19: style: Variable 'delay' is assigned a value that is never used. [unreadVariable]
+   uint32_t delay = 0;
+                  ^
+src/common/pf_scheduler.c:36:13: style: The scope of the variable 'cnt' can be reduced. [variableScope]
+   uint32_t cnt = 0; /* Guard against infinite loop */
+            ^
+src/common/pf_scheduler.c:388:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/common/pf_scheduler.c:446:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint32_t ix;
+            ^
+src/common/pf_scheduler.c:448:11: style: The scope of the variable 'arg' can be reduced. [variableScope]
+   void * arg;
+          ^
+src/common/pf_snmp.c:245:8: style: The scope of the variable 'result' can be reduced. [variableScope]
+   int result;
+       ^
+src/device/pf_block_reader.c:468:13: style: The scope of the variable 'exp_api' can be reduced. [variableScope]
+   uint32_t exp_api;
+            ^
+src/device/pf_block_reader.c:1007:23: style:inconclusive: Function 'pf_get_port_data_check_check_peers' argument 4 names different: declaration 'check_peers' definition 'p_check_peers'. [funcArgNamesDifferent]
+   pf_check_peers_t * p_check_peers)
+                      ^
+src/device/pf_block_reader.h:347:23: note: Function 'pf_get_port_data_check_check_peers' argument 4 names different: declaration 'check_peers' definition 'p_check_peers'.
+   pf_check_peers_t * check_peers);
+                      ^
+src/device/pf_block_reader.c:1007:23: note: Function 'pf_get_port_data_check_check_peers' argument 4 names different: declaration 'check_peers' definition 'p_check_peers'.
+   pf_check_peers_t * p_check_peers)
+                      ^
+src/device/pf_block_reader.c:1030:28: style:inconclusive: Function 'pf_get_port_data_adjust' argument 3 names different: declaration 'p_port_data_check' definition 'p_port_data_adjust'. [funcArgNamesDifferent]
+   pf_port_data_adjust_t * p_port_data_adjust)
+                           ^
+src/device/pf_block_reader.h:362:28: note: Function 'pf_get_port_data_adjust' argument 3 names different: declaration 'p_port_data_check' definition 'p_port_data_adjust'.
+   pf_port_data_adjust_t * p_port_data_check);
+                           ^
+src/device/pf_block_reader.c:1030:28: note: Function 'pf_get_port_data_adjust' argument 3 names different: declaration 'p_port_data_check' definition 'p_port_data_adjust'.
+   pf_port_data_adjust_t * p_port_data_adjust)
+                           ^
+src/device/pf_block_reader.c:1043:40: style:inconclusive: Function 'pf_get_port_data_adjust_peer_to_peer_boundary' argument 3 names different: declaration 'boundary' definition 'p_boundary'. [funcArgNamesDifferent]
+   pf_adjust_peer_to_peer_boundary_t * p_boundary)
+                                       ^
+src/device/pf_block_reader.h:373:40: note: Function 'pf_get_port_data_adjust_peer_to_peer_boundary' argument 3 names different: declaration 'boundary' definition 'p_boundary'.
+   pf_adjust_peer_to_peer_boundary_t * boundary);
+                                       ^
+src/device/pf_block_reader.c:1043:40: note: Function 'pf_get_port_data_adjust_peer_to_peer_boundary' argument 3 names different: declaration 'boundary' definition 'p_boundary'.
+   pf_adjust_peer_to_peer_boundary_t * p_boundary)
+                                       ^
+src/device/pf_block_writer.c:2254:14: style: Redundant initialization for 'block_pos'. The initialized value is overwritten before it is read. [redundantInitialization]
+   block_pos = *p_pos;
+             ^
+src/device/pf_block_writer.c:2249:23: note: block_pos is initialized
+   uint16_t block_pos = *p_pos;
+                      ^
+src/device/pf_block_writer.c:2254:14: note: block_pos is overwritten
+   block_pos = *p_pos;
+             ^
+src/device/pf_block_writer.c:109:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_block_writer.c:567:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_block_writer.c:648:13: style: The scope of the variable 'block_len' can be reduced. [variableScope]
+   uint16_t block_len;
+            ^
+src/device/pf_block_writer.c:649:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+   uint16_t i;
+            ^
+src/device/pf_block_writer.c:1254:13: style: The scope of the variable 'block_len' can be reduced. [variableScope]
+   uint16_t block_len = 0;
+            ^
+src/device/pf_block_writer.c:1257:13: style: The scope of the variable 'cnt' can be reduced. [variableScope]
+   uint16_t cnt;
+            ^
+src/device/pf_block_writer.c:1258:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_block_writer.c:2059:13: style: The scope of the variable 's' can be reduced. [variableScope]
+   uint16_t s;
+            ^
+src/device/pf_block_writer.c:2106:13: style: The scope of the variable 'm' can be reduced. [variableScope]
+   uint16_t m;
+            ^
+src/device/pf_block_writer.c:2147:31: style: The scope of the variable 'exp_submodule' can be reduced. [variableScope]
+   pf_exp_submodule_t const * exp_submodule;
+                              ^
+src/device/pf_block_writer.c:2857:13: style: The scope of the variable 'ch_properties' can be reduced. [variableScope]
+   uint16_t ch_properties = 0;
+            ^
+src/device/pf_block_writer.c:2859:9: style: The scope of the variable 'insert' can be reduced. [variableScope]
+   bool insert;
+        ^
+src/device/pf_block_writer.c:2861:13: style: The scope of the variable 'block_len' can be reduced. [variableScope]
+   uint16_t block_len = 0;
+            ^
+src/device/pf_block_writer.c:2862:13: style: The scope of the variable 'data_pos' can be reduced. [variableScope]
+   uint16_t data_pos;
+            ^
+src/device/pf_block_writer.c:3102:31: style: The scope of the variable 'submodule' can be reduced. [variableScope]
+   pf_exp_submodule_t const * submodule;
+                              ^
+src/device/pf_block_writer.c:3149:22: style: The scope of the variable 'slot' can be reduced. [variableScope]
+   pf_slot_t const * slot;
+                     ^
+src/device/pf_block_writer.c:3360:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+   uint16_t i;
+            ^
+src/device/pf_block_writer.c:300:13: style:inconclusive: Function 'pf_put_padding_align' argument 1 names different: declaration 'start_postion' definition 'start_position'. [funcArgNamesDifferent]
+   uint16_t start_position,
+            ^
+src/device/pf_block_writer.h:124:13: note: Function 'pf_put_padding_align' argument 1 names different: declaration 'start_postion' definition 'start_position'.
+   uint16_t start_postion,
+            ^
+src/device/pf_block_writer.c:300:13: note: Function 'pf_put_padding_align' argument 1 names different: declaration 'start_postion' definition 'start_position'.
+   uint16_t start_position,
+            ^
+src/device/pf_block_writer.c:1254:23: style: Variable 'block_len' is assigned a value that is never used. [unreadVariable]
+   uint16_t block_len = 0;
+                      ^
+src/device/pf_cmdev.c:2687:21: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+            if (ret == 0)
+                    ^
+src/device/pf_cmdev.c:2683:19: note: outer condition: ret==0
+         if ((ret == 0) && (p_exp_api != NULL))
+                  ^
+src/device/pf_cmdev.c:2687:21: note: identical inner condition: ret==0
+            if (ret == 0)
+                    ^
+src/device/pf_cmdev.c:58:19: style: The scope of the variable 'this_subslot' can be reduced. [variableScope]
+   pf_subslot_t * this_subslot;
+                  ^
+src/device/pf_cmdev.c:59:13: style: The scope of the variable 'api_ix' can be reduced. [variableScope]
+   uint16_t api_ix;
+            ^
+src/device/pf_cmdev.c:60:13: style: The scope of the variable 'slot_ix' can be reduced. [variableScope]
+   uint16_t slot_ix;
+            ^
+src/device/pf_cmdev.c:61:13: style: The scope of the variable 'subslot_ix' can be reduced. [variableScope]
+   uint16_t subslot_ix;
+            ^
+src/device/pf_cmdev.c:130:13: style: The scope of the variable 'a' can be reduced. [variableScope]
+   uint16_t a;
+            ^
+src/device/pf_cmdev.c:168:13: style: The scope of the variable 's' can be reduced. [variableScope]
+   uint16_t s;
+            ^
+src/device/pf_cmdev.c:207:13: style: The scope of the variable 's' can be reduced. [variableScope]
+   uint16_t s;
+            ^
+src/device/pf_cmdev.c:1248:27: style: The scope of the variable 'p_diag' can be reduced. [variableScope]
+   const pf_diag_item_t * p_diag;
+                          ^
+src/device/pf_cmdev.c:1314:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_cmdev.c:1986:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix = 0;
+            ^
+src/device/pf_cmdev.c:3011:22: style: The scope of the variable 'p_iocr' can be reduced. [variableScope]
+   pf_iocr_param_t * p_iocr;
+                     ^
+src/device/pf_cmdev.c:3924:13: style: The scope of the variable 'api_ix' can be reduced. [variableScope]
+   uint16_t api_ix;
+            ^
+src/device/pf_cmdev.c:4636:22: style: The scope of the variable 'p_iocr_param' can be reduced. [variableScope]
+   pf_iocr_param_t * p_iocr_param;
+                     ^
+src/device/pf_cmdev.c:4828:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_cmdev.c:4829:9: style: The scope of the variable 'station_name' can be reduced. [variableScope]
+   char station_name[PNET_STATION_NAME_MAX_SIZE]; /** Terminated */
+        ^
+src/device/pf_cmdev.c:5093:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_cmdev.c:5094:13: style: The scope of the variable 'iy' can be reduced. [variableScope]
+   uint16_t iy;
+            ^
+src/device/pf_cmdev.c:5095:9: style: The scope of the variable 'data_avail' can be reduced. [variableScope]
+   bool data_avail = true; /* Assume all OK */
+        ^
+src/device/pf_cmdev.c:1986:16: style: Variable 'ix' is assigned a value that is never used. [unreadVariable]
+   uint16_t ix = 0;
+               ^
+src/device/pf_cmdev.c:2206:25: style: Variable 'in_user_len' is assigned a value that is never used. [unreadVariable]
+   uint16_t in_user_len = 0;
+                        ^
+src/device/pf_cmdev.c:2207:26: style: Variable 'out_user_len' is assigned a value that is never used. [unreadVariable]
+   uint16_t out_user_len = 0;
+                         ^
+src/device/pf_cmdev.c:2341:28: style: Variable 'in_user_len' is assigned a value that is never used. [unreadVariable]
+               in_user_len += p_iodata->data_length + p_iodata->iops_length +
+                           ^
+src/device/pf_cmdev.c:2348:29: style: Variable 'out_user_len' is assigned a value that is never used. [unreadVariable]
+               out_user_len += p_iodata->data_length + p_iodata->iops_length +
+                            ^
+src/device/pf_cmdev.c:2640:20: style: Variable 'api_ix' is assigned a value that is never used. [unreadVariable]
+   uint16_t api_ix = 0;
+                   ^
+src/device/pf_cmdev.c:2642:19: style: Variable 'io_ix' is assigned a value that is never used. [unreadVariable]
+   uint16_t io_ix = 0;  /* io_data/iocs index */
+                  ^
+src/device/pf_cmdev.c:2643:20: style: Variable 'io2_ix' is assigned a value that is never used. [unreadVariable]
+   uint16_t io2_ix = 0; /* io_data/iocs index */
+                   ^
+src/device/pf_cmdev.c:2645:16: style: Variable 'iy' is assigned a value that is never used. [unreadVariable]
+   uint16_t iy = 0;     /* exp_module index */
+               ^
+src/device/pf_cmdev.c:2646:16: style: Variable 'iz' is assigned a value that is never used. [unreadVariable]
+   uint16_t iz = 0;     /* exp_submodule index */
+               ^
+src/device/pf_cmdev.c:2652:23: style: Variable 'combo_cnt' is assigned a value that is never used. [unreadVariable]
+   uint16_t combo_cnt = 0;
+                      ^
+src/device/pf_cmdev.c:4604:11: style: Variable 'iy' is assigned a value that is never used. [unreadVariable]
+   int iy = 0;
+          ^
+src/device/pf_cmina.c:478:12: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+      else if (
+           ^
+src/device/pf_cmina.c:488:7: note: Found duplicate branches for 'if' and 'else'.
+      else
+      ^
+src/device/pf_cmina.c:478:12: note: Found duplicate branches for 'if' and 'else'.
+      else if (
+           ^
+src/device/pf_cmina.c:633:9: style: The scope of the variable 'have_dhcp' can be reduced. [variableScope]
+   bool have_dhcp = false; /* Not yet supported */
+        ^
+src/device/pf_cmina.c:1357:16: style: The scope of the variable 'p_port_data' can be reduced. [variableScope]
+   pf_port_t * p_port_data;
+               ^
+src/device/pf_cmina.c:1526:14: style: Variable 'c' is assigned a value that is never used. [unreadVariable]
+   uint8_t c = 0;
+             ^
+src/device/pf_cmio.c:128:13: style: The scope of the variable 'crep' can be reduced. [variableScope]
+   uint16_t crep;
+            ^
+src/device/pf_cmio.c:129:9: style: The scope of the variable 'data_possible' can be reduced. [variableScope]
+   bool data_possible = true;
+        ^
+src/device/pf_cmpbe.c:144:13: style: The scope of the variable 'temp_control_command' can be reduced. [variableScope]
+   uint16_t temp_control_command;
+            ^
+src/device/pf_cmrdr.c:53:12: style: The scope of the variable 'iocs' can be reduced. [variableScope]
+   uint8_t iocs[255];                          /* Max possible array size */
+           ^
+src/device/pf_cmrdr.c:54:12: style: The scope of the variable 'iops' can be reduced. [variableScope]
+   uint8_t iops[255];                          /* Max possible array size */
+           ^
+src/device/pf_cmrdr.c:55:12: style: The scope of the variable 'subslot_data' can be reduced. [variableScope]
+   uint8_t subslot_data[PF_FRAME_BUFFER_SIZE]; /* Max possible array size */
+           ^
+src/device/pf_cmrdr.c:60:9: style: The scope of the variable 'station_name' can be reduced. [variableScope]
+   char station_name[PNET_STATION_NAME_MAX_SIZE]; /* Terminated*/
+        ^
+src/device/pf_cmrpc.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+src/device/pf_diag.c:80:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_diag.c:121:13: style: The scope of the variable 'ix' can be reduced. [variableScope]
+   uint16_t ix;
+            ^
+src/device/pf_diag.c:204:13: style: The scope of the variable 'prev_ix' can be reduced. [variableScope]
+   uint16_t prev_ix;
+            ^
+src/device/pf_diag.c:205:13: style: The scope of the variable 'item_ix' can be reduced. [variableScope]
+   uint16_t item_ix;
+            ^
+src/device/pf_fspm.c:462:13: style: The scope of the variable 'put' can be reduced. [variableScope]
+   uint16_t put;
+            ^
+src/device/pf_fspm.c:463:13: style: The scope of the variable 'time' can be reduced. [variableScope]
+   uint32_t time = 0;
+            ^
+src/device/pf_fspm.c:463:18: style: Variable 'time' is assigned a value that is never used. [unreadVariable]
+   uint32_t time = 0;
+                 ^
+src/device/pf_fspm.c:158:0: information: Skipping configuration 'PNET_OPTION_AR_VENDOR_BLOCKS' since the value of 'PNET_OPTION_AR_VENDOR_BLOCKS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      PNET_OPTION_AR_VENDOR_BLOCKS);
+^
+src/device/pf_fspm.c:175:0: information: Skipping configuration 'PNET_OPTION_IR' since the value of 'PNET_OPTION_IR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      PNET_OPTION_IR);
+^
+src/device/pf_fspm.c:150:0: information: Skipping configuration 'PNET_OPTION_MC_CR' since the value of 'PNET_OPTION_MC_CR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      PNET_OPTION_MC_CR);
+^
+src/device/pf_fspm.c:172:0: information: Skipping configuration 'PNET_OPTION_PARAMETER_SERVER' since the value of 'PNET_OPTION_PARAMETER_SERVER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      PNET_OPTION_PARAMETER_SERVER);
+^
+src/device/pf_fspm.c:190:0: information: Skipping configuration 'PNET_OPTION_SNMP' since the value of 'PNET_OPTION_SNMP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      PNET_OPTION_SNMP);
+^
+src/device/pf_pdport.c:497:17: style: The scope of the variable 'netif_name' can be reduced. [variableScope]
+   const char * netif_name;
+                ^
+src/device/pf_pdport.c:501:9: style: The scope of the variable 'station_name' can be reduced. [variableScope]
+   char station_name[PNET_STATION_NAME_MAX_SIZE]; /* Terminated*/
+        ^
+src/device/pf_pdport.c:502:13: style: The scope of the variable 'subslot_for_port' can be reduced. [variableScope]
+   uint16_t subslot_for_port;
+            ^
+src/device/pf_pdport.c:824:9: style: The scope of the variable 'peer_stationname_is_correct' can be reduced. [variableScope]
+   bool peer_stationname_is_correct = false;
+        ^
+src/device/pf_pdport.c:900:9: style: The scope of the variable 'peer_portname_is_correct' can be reduced. [variableScope]
+   bool peer_portname_is_correct = false;
+        ^
+src/device/pf_pdport.c:250:21: style: Variable 'fast_enough' is assigned a value that is never used. [unreadVariable]
+   bool fast_enough = false;
+                    ^
+src/device/pf_plugsm.c:38:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+   uint16_t i;
+            ^
+src/device/pnet_api.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+src/drivers/lan9662/src/pf_cpm_driver_lan9662.c:49:12: style: The scope of the variable 'changes' can be reduced. [variableScope]
+   uint8_t changes = 0;
+           ^
+src/drivers/lan9662/src/pf_cpm_driver_lan9662.c:51:9: style: The scope of the variable 'reset_dht' can be reduced. [variableScope]
+   bool reset_dht = false;
+        ^
+src/drivers/lan9662/src/pf_cpm_driver_lan9662.c:49:20: style: Variable 'changes' is assigned a value that is never used. [unreadVariable]
+   uint8_t changes = 0;
+                   ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:463:8: error: Array 'argv[7]' accessed at index 7, which is out of bounds. [arrayIndexOutOfBounds]
+   argv[7] = NULL;
+       ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2592:38: warning: Either the condition 'net==NULL' is redundant or there is possible null pointer dereference: net. [nullPointerRedundantCheck]
+   pf_mera_t * handle = (pf_mera_t *)net->hwo_drv;
+                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2595:12: note: Assuming that condition 'net==NULL' is not redundant
+   if (net == NULL || frame == NULL || evt == NULL)
+           ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2592:38: note: Null pointer dereference
+   pf_mera_t * handle = (pf_mera_t *)net->hwo_drv;
+                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1468:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+   uint16_t i;
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1470:8: style: The scope of the variable 'ret' can be reduced. [variableScope]
+   int ret;
+       ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1741:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+   uint16_t i, j;
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1741:16: style: The scope of the variable 'j' can be reduced. [variableScope]
+   uint16_t i, j;
+               ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2707:9: style: The scope of the variable 'result' can be reduced. [variableScope]
+   char result[100] = {0};
+        ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1328:54: style:inconclusive: Function 'pf_mera_ppm_free' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+int pf_mera_ppm_free (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:56:54: note: Function 'pf_mera_ppm_free' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_ppm_free (pnet_t * net, pf_drv_frame_t * frame);
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1328:54: note: Function 'pf_mera_ppm_free' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_ppm_free (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1416:55: style:inconclusive: Function 'pf_mera_ppm_start' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+int pf_mera_ppm_start (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                      ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:66:55: note: Function 'pf_mera_ppm_start' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_ppm_start (pnet_t * net, pf_drv_frame_t * frame);
+                                                      ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1416:55: note: Function 'pf_mera_ppm_start' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_ppm_start (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                      ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1497:21: style:inconclusive: Function 'pf_mera_ppm_write_input' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:91:21: note: Function 'pf_mera_ppm_write_input' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1497:21: note: Function 'pf_mera_ppm_write_input' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1557:21: style:inconclusive: Function 'pf_mera_ppm_read_data_and_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:156:21: note: Function 'pf_mera_ppm_read_data_and_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1557:21: note: Function 'pf_mera_ppm_read_data_and_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1651:21: style:inconclusive: Function 'pf_mera_ppm_write_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:108:21: note: Function 'pf_mera_ppm_write_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1651:21: note: Function 'pf_mera_ppm_write_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1697:21: style:inconclusive: Function 'pf_mera_ppm_write_iocs' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:124:21: note: Function 'pf_mera_ppm_write_iocs' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1697:21: note: Function 'pf_mera_ppm_write_iocs' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1719:21: style:inconclusive: Function 'pf_mera_ppm_write_data_status' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:138:21: note: Function 'pf_mera_ppm_write_data_status' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1719:21: note: Function 'pf_mera_ppm_write_data_status' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1737:54: style:inconclusive: Function 'pf_mera_ppm_stop' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+int pf_mera_ppm_stop (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:76:54: note: Function 'pf_mera_ppm_stop' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_ppm_stop (pnet_t * net, pf_drv_frame_t * frame);
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1737:54: note: Function 'pf_mera_ppm_stop' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_ppm_stop (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2312:55: style:inconclusive: Function 'pf_mera_cpm_start' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+int pf_mera_cpm_start (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                      ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:189:55: note: Function 'pf_mera_cpm_start' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_start (pnet_t * net, pf_drv_frame_t * frame);
+                                                      ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2312:55: note: Function 'pf_mera_cpm_start' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_start (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                      ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2376:54: style:inconclusive: Function 'pf_mera_cpm_free' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+int pf_mera_cpm_free (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:179:54: note: Function 'pf_mera_cpm_free' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_free (pnet_t * net, pf_drv_frame_t * frame);
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2376:54: note: Function 'pf_mera_cpm_free' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_free (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2395:54: style:inconclusive: Function 'pf_mera_cpm_stop' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+int pf_mera_cpm_stop (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:199:54: note: Function 'pf_mera_cpm_stop' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_stop (pnet_t * net, pf_drv_frame_t * frame);
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2395:54: note: Function 'pf_mera_cpm_stop' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_stop (pnet_t * net, pf_drv_frame_t * drv_frame)
+                                                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2469:21: style:inconclusive: Function 'pf_mera_cpm_read_data_and_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:220:21: note: Function 'pf_mera_cpm_read_data_and_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2469:21: note: Function 'pf_mera_cpm_read_data_and_iops' argument 2 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2470:13: style:inconclusive: Function 'pf_mera_cpm_read_data_and_iops' argument 3 names different: declaration 'slot' definition 'slot_nbr'. [funcArgNamesDifferent]
+   uint16_t slot_nbr,
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:221:13: note: Function 'pf_mera_cpm_read_data_and_iops' argument 3 names different: declaration 'slot' definition 'slot_nbr'.
+   uint16_t slot,
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2470:13: note: Function 'pf_mera_cpm_read_data_and_iops' argument 3 names different: declaration 'slot' definition 'slot_nbr'.
+   uint16_t slot_nbr,
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2471:13: style:inconclusive: Function 'pf_mera_cpm_read_data_and_iops' argument 4 names different: declaration 'subslot' definition 'subslot_nbr'. [funcArgNamesDifferent]
+   uint16_t subslot_nbr,
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:222:13: note: Function 'pf_mera_cpm_read_data_and_iops' argument 4 names different: declaration 'subslot' definition 'subslot_nbr'.
+   uint16_t subslot,
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2471:13: note: Function 'pf_mera_cpm_read_data_and_iops' argument 4 names different: declaration 'subslot' definition 'subslot_nbr'.
+   uint16_t subslot_nbr,
+            ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2590:22: style:inconclusive: Function 'pf_mera_poll_cpm_events' argument 3 names different: declaration 'event' definition 'evt'. [funcArgNamesDifferent]
+   pf_mera_event_t * evt)
+                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:266:22: note: Function 'pf_mera_poll_cpm_events' argument 3 names different: declaration 'event' definition 'evt'.
+   pf_mera_event_t * event);
+                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2590:22: note: Function 'pf_mera_poll_cpm_events' argument 3 names different: declaration 'event' definition 'evt'.
+   pf_mera_event_t * evt)
+                     ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2623:21: style:inconclusive: Function 'pf_mera_cpm_read_data_status' argument 1 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:276:21: note: Function 'pf_mera_cpm_read_data_status' argument 1 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2623:21: note: Function 'pf_mera_cpm_read_data_status' argument 1 names different: declaration 'frame' definition 'drv_frame'.
+   pf_drv_frame_t * drv_frame,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2650:49: style:inconclusive: Function 'pf_mera_cpm_read_rx_count' argument 1 names different: declaration 'frame' definition 'drv_frame'. [funcArgNamesDifferent]
+int pf_mera_cpm_read_rx_count (pf_drv_frame_t * drv_frame, uint64_t * rx_count)
+                                                ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:288:49: note: Function 'pf_mera_cpm_read_rx_count' argument 1 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_read_rx_count (pf_drv_frame_t * frame, uint64_t * rx_count);
+                                                ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2650:49: note: Function 'pf_mera_cpm_read_rx_count' argument 1 names different: declaration 'frame' definition 'drv_frame'.
+int pf_mera_cpm_read_rx_count (pf_drv_frame_t * drv_frame, uint64_t * rx_count)
+                                                ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2702:21: style:inconclusive: Function 'pf_mera_get_port_from_remote_mac' argument 1 names different: declaration 'mac_address' definition 'mac_addr'. [funcArgNamesDifferent]
+   pnet_ethaddr_t * mac_addr,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.h:328:21: note: Function 'pf_mera_get_port_from_remote_mac' argument 1 names different: declaration 'mac_address' definition 'mac_addr'.
+   pnet_ethaddr_t * mac_address,
+                    ^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2702:21: note: Function 'pf_mera_get_port_from_remote_mac' argument 1 names different: declaration 'mac_address' definition 'mac_addr'.
+   pnet_ethaddr_t * mac_addr,
+                    ^
+src/drivers/lan9662/src/pf_mera_trace.c:72:4: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+   printf (
+   ^
+src/drivers/lan9662/src/pf_mera_trace.c:72:4: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+   printf (
+   ^
+src/drivers/lan9662/src/pf_mera_trace.c:72:4: warning: %u in format string (no. 3) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+   printf (
+   ^
+src/drivers/lan9662/src/pf_mera_trace.c:72:4: warning: %u in format string (no. 9) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+   printf (
+   ^
+src/drivers/lan9662/src/pf_rte_uio.c:141:11: portability: %zi in format string (no. 1) requires 'size_t *' but the argument type is 'size_t * {aka unsigned long *}'. [invalidScanfArgType_int]
+      if (fscanf (fp, "%zi", &mapsize))
+          ^
+src/drivers/lan9662/src/pf_sram_uio.c:135:11: portability: %zi in format string (no. 1) requires 'size_t *' but the argument type is 'size_t * {aka unsigned long *}'. [invalidScanfArgType_int]
+      if (fscanf (fp, "%zi", &mapsize))
+          ^
+src/drivers/lan9662/src/pf_sram_uio.c:286:15: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+   uint32_t i = 0;
+              ^
+src/drivers/lan9662/src/pf_sram_uio.c:321:15: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+   uint32_t i = 0;
+              ^
+src/ports/STM32Cube/pnal_eth.c:53:24: style: The scope of the variable 'handle' can be reduced. [variableScope]
+   pnal_eth_handle_t * handle;
+                       ^
+src/ports/STM32Cube/pnal_eth.c:78:24: style: The scope of the variable 'handle' can be reduced. [variableScope]
+   pnal_eth_handle_t * handle;
+                       ^
+src/ports/linux/pnal.c:412:13: style: The scope of the variable 'speed' can be reduced. [variableScope]
+   uint32_t speed = 0;          /* Mbit/s */
+            ^
+src/ports/linux/pnal.c:412:19: style: Variable 'speed' is assigned a value that is never used. [unreadVariable]
+   uint32_t speed = 0;          /* Mbit/s */
+                  ^
+src/ports/linux/pnal.c:413:22: style: Variable 'port_type' is assigned a value that is never used. [unreadVariable]
+   uint8_t port_type = PORT_TP; /* Linux PORT_xxx */
+                     ^
+src/ports/linux/pnal_eth.c:56:12: style: The scope of the variable 'readlen' can be reduced. [variableScope]
+   ssize_t readlen;
+           ^
+src/ports/rt-kernel/mib/rowindex.c:70:11: warning: Identical condition and return expression 'error', return value is always 0 [identicalConditionAfterEarlyExit]
+   return error;
+          ^
+src/ports/rt-kernel/mib/rowindex.c:60:8: note: If condition 'error' is true, the function will return/exit
+   if (error)
+       ^
+src/ports/rt-kernel/mib/rowindex.c:70:11: note: Returning identical expression 'error'
+   return error;
+          ^
+src/ports/rt-kernel/pnal_eth.c:55:24: style: The scope of the variable 'handle' can be reduced. [variableScope]
+   pnal_eth_handle_t * handle;
+                       ^
+src/ports/rt-kernel/pnal_eth.c:80:24: style: The scope of the variable 'handle' can be reduced. [variableScope]
+   pnal_eth_handle_t * handle;
+                       ^
+test/mocks.cpp:136:66: style:inconclusive: Function 'mock_pnal_eth_send' argument 2 names different: declaration 'buf' definition 'p_buf'. [funcArgNamesDifferent]
+int mock_pnal_eth_send (pnal_eth_handle_t * handle, pnal_buf_t * p_buf)
+                                                                 ^
+test/mocks.h:106:66: note: Function 'mock_pnal_eth_send' argument 2 names different: declaration 'buf' definition 'p_buf'.
+int mock_pnal_eth_send (pnal_eth_handle_t * handle, pnal_buf_t * buf);
+                                                                 ^
+test/mocks.cpp:136:66: note: Function 'mock_pnal_eth_send' argument 2 names different: declaration 'buf' definition 'p_buf'.
+int mock_pnal_eth_send (pnal_eth_handle_t * handle, pnal_buf_t * p_buf)
+                                                                 ^
+test/mocks.cpp:190:20: style:inconclusive: Function 'mock_pnal_udp_recvfrom' argument 2 names different: declaration 'dst_addr' definition 'p_dst_addr'. [funcArgNamesDifferent]
+   pnal_ipaddr_t * p_dst_addr,
+                   ^
+test/mocks.h:127:20: note: Function 'mock_pnal_udp_recvfrom' argument 2 names different: declaration 'dst_addr' definition 'p_dst_addr'.
+   pnal_ipaddr_t * dst_addr,
+                   ^
+test/mocks.cpp:190:20: note: Function 'mock_pnal_udp_recvfrom' argument 2 names different: declaration 'dst_addr' definition 'p_dst_addr'.
+   pnal_ipaddr_t * p_dst_addr,
+                   ^
+test/mocks.cpp:191:20: style:inconclusive: Function 'mock_pnal_udp_recvfrom' argument 3 names different: declaration 'dst_port' definition 'p_dst_port'. [funcArgNamesDifferent]
+   pnal_ipport_t * p_dst_port,
+                   ^
+test/mocks.h:128:20: note: Function 'mock_pnal_udp_recvfrom' argument 3 names different: declaration 'dst_port' definition 'p_dst_port'.
+   pnal_ipport_t * dst_port,
+                   ^
+test/mocks.cpp:191:20: note: Function 'mock_pnal_udp_recvfrom' argument 3 names different: declaration 'dst_port' definition 'p_dst_port'.
+   pnal_ipport_t * p_dst_port,
+                   ^
+test/test_cmrdr.cpp:282:11: style: Redundant initialization for 'in_len'. The initialized value is overwritten before it is read. [redundantInitialization]
+   in_len = sizeof (in_data);
+          ^
+test/test_cmrdr.cpp:229:20: note: in_len is initialized
+   uint16_t in_len = sizeof (in_data);
+                   ^
+test/test_cmrdr.cpp:282:11: note: in_len is overwritten
+   in_len = sizeof (in_data);
+          ^
+test/test_cmrdr.cpp:428:11: style: Redundant initialization for 'in_len'. The initialized value is overwritten before it is read. [redundantInitialization]
+   in_len = sizeof (in_data);
+          ^
+test/test_cmrdr.cpp:377:20: note: in_len is initialized
+   uint16_t in_len = sizeof (in_data);
+                   ^
+test/test_cmrdr.cpp:428:11: note: in_len is overwritten
+   in_len = sizeof (in_data);
+          ^
+test/test_cmrpc.cpp:481:11: style: Redundant initialization for 'in_len'. The initialized value is overwritten before it is read. [redundantInitialization]
+   in_len = sizeof (in_data);
+          ^
+test/test_cmrpc.cpp:429:20: note: in_len is initialized
+   uint16_t in_len = sizeof (in_data);
+                   ^
+test/test_cmrpc.cpp:481:11: note: in_len is overwritten
+   in_len = sizeof (in_data);
+          ^
+test/test_diag.cpp:184:11: style: Redundant initialization for 'in_len'. The initialized value is overwritten before it is read. [redundantInitialization]
+   in_len = sizeof (in_data);
+          ^
+test/test_diag.cpp:131:20: note: in_len is initialized
+   uint16_t in_len = sizeof (in_data);
+                   ^
+test/test_diag.cpp:184:11: note: in_len is overwritten
+   in_len = sizeof (in_data);
+          ^
+test/test_lldp.cpp:192:24: style: Variable 'mac_address.addr[0]' is reassigned a value before the old one has been used. [redundantAssignment]
+   mac_address.addr[0] = 0xcd;
+                       ^
+test/test_lldp.cpp:191:24: note: mac_address.addr[0] is assigned
+   mac_address.addr[0] = 0xab;
+                       ^
+test/test_lldp.cpp:192:24: note: mac_address.addr[0] is overwritten
+   mac_address.addr[0] = 0xcd;
+                       ^
+test/test_lldp.cpp:193:24: style: Variable 'mac_address.addr[0]' is reassigned a value before the old one has been used. [redundantAssignment]
+   mac_address.addr[0] = 0xef;
+                       ^
+test/test_lldp.cpp:192:24: note: mac_address.addr[0] is assigned
+   mac_address.addr[0] = 0xcd;
+                       ^
+test/test_lldp.cpp:193:24: note: mac_address.addr[0] is overwritten
+   mac_address.addr[0] = 0xef;
+                       ^
+test/test_lldp.cpp:194:24: style: Variable 'mac_address.addr[0]' is reassigned a value before the old one has been used. [redundantAssignment]
+   mac_address.addr[0] = 0x01;
+                       ^
+test/test_lldp.cpp:193:24: note: mac_address.addr[0] is assigned
+   mac_address.addr[0] = 0xef;
+                       ^
+test/test_lldp.cpp:194:24: note: mac_address.addr[0] is overwritten
+   mac_address.addr[0] = 0x01;
+                       ^
+test/test_lldp.cpp:195:24: style: Variable 'mac_address.addr[0]' is reassigned a value before the old one has been used. [redundantAssignment]
+   mac_address.addr[0] = 0x23;
+                       ^
+test/test_lldp.cpp:194:24: note: mac_address.addr[0] is assigned
+   mac_address.addr[0] = 0x01;
+                       ^
+test/test_lldp.cpp:195:24: note: mac_address.addr[0] is overwritten
+   mac_address.addr[0] = 0x23;
+                       ^
+test/test_lldp.cpp:196:24: style: Variable 'mac_address.addr[0]' is reassigned a value before the old one has been used. [redundantAssignment]
+   mac_address.addr[0] = 0x45;
+                       ^
+test/test_lldp.cpp:195:24: note: mac_address.addr[0] is assigned
+   mac_address.addr[0] = 0x23;
+                       ^
+test/test_lldp.cpp:196:24: note: mac_address.addr[0] is overwritten
+   mac_address.addr[0] = 0x45;
+                       ^
+test/test_pnetapi.cpp:215:11: style: Redundant initialization for 'in_len'. The initialized value is overwritten before it is read. [redundantInitialization]
+   in_len = sizeof (in_data);
+          ^
+test/test_pnetapi.cpp:170:20: note: in_len is initialized
+   uint16_t in_len = sizeof (in_data);
+                   ^
+test/test_pnetapi.cpp:215:11: note: in_len is overwritten
+   in_len = sizeof (in_data);
+          ^
+test/utils_for_testing.cpp:190:13: style: The scope of the variable 'slot' can be reduced. [variableScope]
+   uint16_t slot = 0;
+            ^
+test/utils_for_testing.cpp:589:8: style: The scope of the variable 'ret' can be reduced. [variableScope]
+   int ret;
+       ^
+test/utils_for_testing.cpp:591:14: style: The scope of the variable 'p_ctr' can be reduced. [variableScope]
+   uint8_t * p_ctr;
+             ^
+test/utils_for_testing.cpp:190:18: style: Variable 'slot' is assigned a value that is never used. [unreadVariable]
+   uint16_t slot = 0;
+                 ^
+test/utils_for_testing.cpp:553:18: style: Variable 'slot' is assigned a value that is never used. [unreadVariable]
+   uint16_t slot = 0;
+                 ^
+test/pf_test.cpp:19:0: style: The function 'OS_MAIN' is never used. [unusedFunction]
+
+^
+test/test_lldp.cpp:437:0: style: The function 'SetUp' is never used. [unusedFunction]
+
+^
+src/ports/STM32Cube/sampleapp_main.c:44:0: style: The function '_main' is never used. [unusedFunction]
+
+^
+samples/pn_dev_lan9662/app_gsdml.c:377:0: style: The function 'app_gsdml_get_submodules' is never used. [unusedFunction]
+
+^
+samples/pn_dev/app_utils.c:156:0: style: The function 'app_utils_ip_to_string' is never used. [unusedFunction]
+
+^
+samples/pn_dev/app_utils.c:168:0: style: The function 'app_utils_mac_to_string' is never used. [unusedFunction]
+
+^
+samples/pn_dev/app_utils.c:820:0: style: The function 'app_utils_subslot_is_no_io' is never used. [unusedFunction]
+
+^
+samples/pn_dev/app_utils.c:830:0: style: The function 'app_utils_subslot_is_output' is never used. [unusedFunction]
+
+^
+src/ports/STM32Cube/pnal_eth.c:128:0: style: The function 'lwip_hook_unknown_eth_protocol' is never used. [unusedFunction]
+
+^
+test/mocks.cpp:504:0: style: The function 'mock_pf_bg_worker_init' is never used. [unusedFunction]
+
+^
+test/mocks.cpp:447:0: style: The function 'mock_pf_file_clear' is never used. [unusedFunction]
+
+^
+test/mocks.cpp:305:0: style: The function 'mock_pf_generate_uuid' is never used. [unusedFunction]
+
+^
+test/mocks.cpp:114:0: style: The function 'mock_pnal_get_ip_suite' is never used. [unusedFunction]
+
+^
+test/mocks.cpp:357:0: style: The function 'mock_pnal_snmp_init' is never used. [unusedFunction]
+
+^
+src/ports/rt-kernel/pnal.c:233:0: style: The function 'os_snprintf' is never used. [unusedFunction]
+
+^
+src/common/pf_bg_worker.c:40:0: style: The function 'pf_bg_worker_init' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1135:0: style: The function 'pf_cmdev_ar_show' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1469:0: style: The function 'pf_cmdev_cm_abort' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:5090:0: style: The function 'pf_cmdev_cm_ccontrol_req' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1520:0: style: The function 'pf_cmdev_cm_init_req' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1233:0: style: The function 'pf_cmdev_device_show' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1244:0: style: The function 'pf_cmdev_diag_show' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1301:0: style: The function 'pf_cmdev_exit' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:276:0: style: The function 'pf_cmdev_get_module_ident' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1340:0: style: The function 'pf_cmdev_get_state' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:291:0: style: The function 'pf_cmdev_get_submodule_ident' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:1312:0: style: The function 'pf_cmdev_init' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:687:0: style: The function 'pf_cmdev_plug_submodule' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:866:0: style: The function 'pf_cmdev_pull_module' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:5016:0: style: The function 'pf_cmdev_rm_ccontrol_cnf' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:4822:0: style: The function 'pf_cmdev_rm_connect_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:4941:0: style: The function 'pf_cmdev_rm_dcontrol_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_cmdev.c:4893:0: style: The function 'pf_cmdev_rm_release_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_cmina.c:442:0: style: The function 'pf_cmina_init' is never used. [unusedFunction]
+
+^
+src/device/pf_cmina.c:1274:0: style: The function 'pf_cmina_remove_all_data_files' is never used. [unusedFunction]
+
+^
+src/device/pf_cmina.c:1411:0: style: The function 'pf_cmina_show' is never used. [unusedFunction]
+
+^
+src/device/pf_cmio.c:69:0: style: The function 'pf_cmio_show' is never used. [unusedFunction]
+
+^
+src/device/pf_cmpbe.c:270:0: style: The function 'pf_cmpbe_cm_ccontrol_req' is never used. [unusedFunction]
+
+^
+src/device/pf_cmpbe.c:241:0: style: The function 'pf_cmpbe_rm_ccontrol_cnf' is never used. [unusedFunction]
+
+^
+src/device/pf_cmpbe.c:68:0: style: The function 'pf_cmpbe_show' is never used. [unusedFunction]
+
+^
+src/device/pf_cmrpc_epm.c:336:0: style: The function 'pf_cmrpc_lookup_request' is never used. [unusedFunction]
+
+^
+src/device/pf_cmsm.c:233:0: style: The function 'pf_cmsm_rm_read_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_cmsm.c:76:0: style: The function 'pf_cmsm_show' is never used. [unusedFunction]
+
+^
+src/device/pf_cmsu.c:309:0: style: The function 'pf_cmsu_alarm_error_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_cmsu.c:276:0: style: The function 'pf_cmsu_cmdmc_error_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_cmsu.c:34:0: style: The function 'pf_cmsu_init' is never used. [unusedFunction]
+
+^
+src/device/pf_cmwrr.c:35:0: style: The function 'pf_cmwrr_init' is never used. [unusedFunction]
+
+^
+src/device/pf_cmwrr.c:299:0: style: The function 'pf_cmwrr_rm_write_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_cmwrr.c:69:0: style: The function 'pf_cmwrr_show' is never used. [unusedFunction]
+
+^
+src/common/pf_cpm.c:77:0: style: The function 'pf_cpm_init' is never used. [unusedFunction]
+
+^
+src/common/pf_cpm_driver_sw.c:125:0: style: The function 'pf_cpm_mrwdt_expired' is never used. [unusedFunction]
+
+^
+src/common/pf_cpm.c:593:0: style: The function 'pf_cpm_show' is never used. [unusedFunction]
+
+^
+src/common/pf_dcp.c:2000:0: style: The function 'pf_dcp_exit' is never used. [unusedFunction]
+
+^
+src/common/pf_dcp.c:2007:0: style: The function 'pf_dcp_init' is never used. [unusedFunction]
+
+^
+src/device/pf_diag.c:980:0: style: The function 'pf_diag_std_update' is never used. [unusedFunction]
+
+^
+src/device/pf_diag.c:1014:0: style: The function 'pf_diag_usi_add' is never used. [unusedFunction]
+
+^
+src/device/pf_diag.c:1099:0: style: The function 'pf_diag_usi_remove' is never used. [unusedFunction]
+
+^
+src/device/pf_diag.c:1058:0: style: The function 'pf_diag_usi_update' is never used. [unusedFunction]
+
+^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1117:0: style: The function 'pf_driver_init' is never used. [unusedFunction]
+
+^
+src/common/pf_eth.c:102:0: style: The function 'pf_eth_init' is never used. [unusedFunction]
+
+^
+src/device/pf_fspm.c:1327:0: style: The function 'pf_fspm_alpmi_alarm_cnf' is never used. [unusedFunction]
+
+^
+src/device/pf_fspm.c:1352:0: style: The function 'pf_fspm_alpmr_alarm_ack_cnf' is never used. [unusedFunction]
+
+^
+src/device/pf_fspm.c:1286:0: style: The function 'pf_fspm_alpmr_alarm_ind' is never used. [unusedFunction]
+
+^
+src/device/pf_fspm.c:48:0: style: The function 'pf_fspm_im_show' is never used. [unusedFunction]
+
+^
+src/device/pf_fspm.c:414:0: style: The function 'pf_fspm_init' is never used. [unusedFunction]
+
+^
+src/device/pf_fspm.c:69:0: style: The function 'pf_fspm_logbook_show' is never used. [unusedFunction]
+
+^
+src/device/pf_fspm.c:101:0: style: The function 'pf_fspm_option_show' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:921:0: style: The function 'pf_get_alarm_ack' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:559:0: style: The function 'pf_get_alarm_cr_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:895:0: style: The function 'pf_get_alarm_data' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:872:0: style: The function 'pf_get_alarm_fixed' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:348:0: style: The function 'pf_get_ar_param' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:595:0: style: The function 'pf_get_ar_prm_server_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:681:0: style: The function 'pf_get_ar_rpc_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:691:0: style: The function 'pf_get_ar_vendor_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:710:0: style: The function 'pf_get_control' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:739:0: style: The function 'pf_get_dce_rpc_header' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:817:0: style: The function 'pf_get_epm_lookup_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:461:0: style: The function 'pf_get_exp_api_module' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:396:0: style: The function 'pf_get_iocr_param' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:637:0: style: The function 'pf_get_ir_info_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:655:0: style: The function 'pf_get_mcr_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:727:0: style: The function 'pf_get_ndr_data' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:945:0: style: The function 'pf_get_pnio_status' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:794:0: style: The function 'pf_get_read_request' is never used. [unusedFunction]
+
+^
+src/device/pf_block_reader.c:834:0: style: The function 'pf_get_write_request' is never used. [unusedFunction]
+
+^
+src/common/pf_lldp.c:1147:0: style: The function 'pf_lldp_init' is never used. [unusedFunction]
+
+^
+src/drivers/lan9662/src/pf_lan9662_mera.c:1695:0: style: The function 'pf_mera_ppm_write_iocs' is never used. [unusedFunction]
+
+^
+src/drivers/lan9662/src/pf_lan9662_mera.c:2674:0: style: The function 'pf_mera_show' is never used. [unusedFunction]
+
+^
+src/device/pf_pdport.c:362:0: style: The function 'pf_pdport_init' is never used. [unusedFunction]
+
+^
+src/device/pf_pdport.c:1120:0: style: The function 'pf_pdport_periodic' is never used. [unusedFunction]
+
+^
+src/device/pf_pdport.c:1103:0: style: The function 'pf_pdport_start_linkmonitor' is never used. [unusedFunction]
+
+^
+src/device/pf_plugsm.c:148:0: style: The function 'pf_plugsm_application_ready_req' is never used. [unusedFunction]
+
+^
+src/device/pf_plugsm.c:100:0: style: The function 'pf_plugsm_prmend_ind' is never used. [unusedFunction]
+
+^
+src/common/pf_ppm.c:47:0: style: The function 'pf_ppm_init' is never used. [unusedFunction]
+
+^
+src/common/pf_ppm.c:503:0: style: The function 'pf_ppm_set_data_and_iops' is never used. [unusedFunction]
+
+^
+src/common/pf_ppm.c:883:0: style: The function 'pf_ppm_set_data_status_provider' is never used. [unusedFunction]
+
+^
+src/common/pf_ppm.c:858:0: style: The function 'pf_ppm_set_data_status_redundancy' is never used. [unusedFunction]
+
+^
+src/common/pf_ppm.c:833:0: style: The function 'pf_ppm_set_data_status_state' is never used. [unusedFunction]
+
+^
+src/common/pf_ppm.c:586:0: style: The function 'pf_ppm_set_iocs' is never used. [unusedFunction]
+
+^
+src/common/pf_ppm.c:1052:0: style: The function 'pf_ppm_show' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:3481:0: style: The function 'pf_put_alarm_block' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:434:0: style: The function 'pf_put_alarm_cr_result' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:3382:0: style: The function 'pf_put_alarm_fixed' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:333:0: style: The function 'pf_put_ar_result' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:695:0: style: The function 'pf_put_ar_rpc_result' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:729:0: style: The function 'pf_put_ar_server_result' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:773:0: style: The function 'pf_put_ar_vendor_result' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:1368:0: style: The function 'pf_put_control' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:1437:0: style: The function 'pf_put_dce_rpc_header' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:387:0: style: The function 'pf_put_iocr_result' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:203:0: style: The function 'pf_put_mem_overlapping' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:2496:0: style: The function 'pf_put_record_data_write' is never used. [unusedFunction]
+
+^
+src/device/pf_block_writer.c:2528:0: style: The function 'pf_put_write_result' is never used. [unusedFunction]
+
+^
+src/common/pf_scheduler.c:483:0: style: The function 'pf_scheduler_show' is never used. [unusedFunction]
+
+^
+src/common/pf_scheduler.c:444:0: style: The function 'pf_scheduler_tick' is never used. [unusedFunction]
+
+^
+src/common/pf_snmp.c:328:0: style: The function 'pf_snmp_fspm_im_location_ind' is never used. [unusedFunction]
+
+^
+src/common/pf_snmp.c:690:0: style: The function 'pf_snmp_show' is never used. [unusedFunction]
+
+^
+src/common/pf_udp.c:71:0: style: The function 'pf_udp_close' is never used. [unusedFunction]
+
+^
+src/common/pf_udp.c:31:0: style: The function 'pf_udp_open' is never used. [unusedFunction]
+
+^
+src/common/pf_udp.c:60:0: style: The function 'pf_udp_recvfrom' is never used. [unusedFunction]
+
+^
+src/common/pf_udp.c:36:0: style: The function 'pf_udp_sendto' is never used. [unusedFunction]
+
+^
+src/ports/STM32Cube/pnal.c:305:0: style: The function 'pnal_buf_header' is never used. [unusedFunction]
+
+^
+src/ports/STM32Cube/pnal.c:94:0: style: The function 'pnal_get_ip_suite' is never used. [unusedFunction]
+
+^
+src/ports/linux/pnal_snmp.c:72:0: style: The function 'pnal_snmp_init' is never used. [unusedFunction]
+
+^
+src/ports/rt-kernel/sampleapp_main.c:121:0: style: The function 'shell_banner' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
